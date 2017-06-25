@@ -1,0 +1,82 @@
+@import './var.css';
+
+body {
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--color-blue);
+  &:not([href]) {
+    cursor: pointer;
+  }
+}
+
+.error {
+  color: var(--color-red);
+}
+
+.success {
+  color: var(--color-green);
+}
+
+.link {
+  color: var(--color-blue);
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
