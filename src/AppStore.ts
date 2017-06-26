@@ -20,8 +20,11 @@ export class AppStore {
   }
 
   shift(shift) {
-    const current = this.i
     let i = this.i + shift
+    if (i < 0 || i > this.n - 1) {
+      return
+    }
+
     this.i = i
   }
 

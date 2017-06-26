@@ -21,3 +21,10 @@
   background-position: center;
   position: relative;
 }
+
+.counter {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: white;
+}

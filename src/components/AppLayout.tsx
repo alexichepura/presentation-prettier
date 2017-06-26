@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { observer, inject } from 'mobx-react'
+import { AppStore } from '../AppStore'
 // import { Routes } from './Routes'
 
 import { Slider, Slide } from './Slider'
@@ -47,7 +48,24 @@ export class AppLayout extends React.Component<{}, {}> {
           {/*<Slide component={Refactor} />*/}
           <Slide component={Outro} />
         </Slider>
+        <Counter />
       </main>
+    )
+  }
+}
+
+interface SliderProps {
+  app?: AppStore
+}
+
+@inject('app')
+@observer
+export class Counter extends React.Component<SliderProps, {}> {
+  render() {
+    return (
+      <div className={styles.counter}>
+        {this.props.app.i + 1}/{this.props.app.n}
+      </div>
     )
   }
 }
