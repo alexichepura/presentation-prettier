@@ -1,5 +1,12 @@
 @import './var.css';
 
+@font-face {
+  font-family: 'Fira Code';
+  src: url('font/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: -apple-system,
     BlinkMacSystemFont,
@@ -14,6 +21,16 @@ body {
     sans-serif;
 
   color: rgba(0, 0, 0, 0.87);
+}
+
+.code {
+  font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
+  text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+  /*width: 30em;*/
+  /*margin: 5em auto;*/
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: "Fira Code";
 }
 
 h1, h2, h3, h4, h5, h6 {

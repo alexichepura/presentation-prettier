@@ -12,3 +12,9 @@
   --color-green: #0DC272;
   --color-blue: #0090ef;
 }
+
+.center-x-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

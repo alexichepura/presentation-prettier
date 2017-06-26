@@ -30,9 +30,18 @@ export class Slider extends React.Component<SliderProps, {}> {
   }
 }
 
+interface SlideProps {
+  component?: any
+}
 @observer
-export class Slide extends React.Component<{}, {}> {
+export class Slide extends React.Component<SlideProps, {}> {
   render() {
-    return <div className={styles.slide}>{this.props.children}</div>
+    return (
+      <div className={styles.slide}>
+        {this.props.component
+          ? React.createElement(this.props.component)
+          : this.props.children}
+      </div>
+    )
   }
 }
