@@ -1,13 +1,12 @@
 import * as React from 'react'
 import { observer, inject } from 'mobx-react'
-import { AppStore } from '../AppStore'
-// import { Routes } from './Routes'
 
+import { AppStore } from '../AppStore'
 import { Slider, Slide } from './Slider'
 const styles = require('./App.css')
 
-import { Intro } from './Slides/Intro'
 import {
+  Intro,
   Split,
   Formatted,
   Consistency,

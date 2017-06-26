@@ -1,31 +1,43 @@
 import * as React from 'react'
 const styles = require('./Slides.css')
 
-export class Split extends React.Component<{}, {}> {
-  render() {
-    return (
-      <div className={'center-x-y ' + styles.slide}>
-        <video
-          style={{ marginTop: '-50px', marginLeft: '50px' }}
-          autoPlay
-          loop
-          src="media/split.mp4"
-          className={styles.media}
-        />
-        <span style={{ left: '20%', top: '70%' }} className={styles.absolute}>
-          2 spaces
-        </span>
-        <span style={{ left: '42%', top: '84%' }} className={styles.absolute}>
-          Tabs
-        </span>
-        <span style={{ left: '67%', top: '86%' }} className={styles.absolute}>
-          4 spaces
-        </span>
+export const Intro = () =>
+  <div className={styles.slideVerticalCenter}>
+    <h1 className={'code' + ' ' + styles.intro}>
+      <span className={styles.red}>howILearned</span>
+      <br />
 
-      </div>
-    )
-  }
-}
+      &nbsp;&nbsp;
+      <span className={styles.purple}>to</span>&nbsp;
+      <span className={styles.blue}>stopWorrying</span>()
+
+      <br />
+      &nbsp;&nbsp;
+      <span className={styles.purple}>and</span>&nbsp;
+      <span className={styles.blue}>loveFormatting</span>()
+    </h1>
+    <Author />
+  </div>
+
+export const Split = () =>
+  <div className={'center-x-y ' + styles.slide}>
+    <video
+      style={{ marginTop: '-50px', marginLeft: '50px' }}
+      autoPlay
+      loop
+      src="media/split.mp4"
+      className={styles.media}
+    />
+    <span style={{ left: '20%', top: '70%' }} className={styles.absolute}>
+      2 spaces
+    </span>
+    <span style={{ left: '42%', top: '84%' }} className={styles.absolute}>
+      Tabs
+    </span>
+    <span style={{ left: '67%', top: '86%' }} className={styles.absolute}>
+      4 spaces
+    </span>
+  </div>
 
 export const Refactor = () =>
   <div className={'center-x-y ' + styles.slide}>
@@ -38,12 +50,12 @@ export const Formatted = () =>
   </div>
 
 export const Waaat = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <video autoPlay loop src="media/waaat.mp4" />
   </div>
 
 export const Support = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '42px' }}>
       <li>JavaScript, including ES2017</li>
       <li>JSX</li>
@@ -54,7 +66,7 @@ export const Support = () =>
   </div>
 
 export const Options = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '42px' }}>
       <li>Print Width</li>
       <li>Tab Width</li>
@@ -68,7 +80,7 @@ export const Options = () =>
   </div>
 
 export const Consistency = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '42px' }}>
       <li>consistency<br /><br /></li>
       <li>no nitpicking and no commits to fix formatting<br /><br /></li>
@@ -77,7 +89,7 @@ export const Consistency = () =>
   </div>
 
 export const Consistency2 = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '42px' }}>
       <li>
         consistency <br />&nbsp;- formatters: jsbeautifier, prettydiff, eslint
@@ -143,5 +155,12 @@ export const Prettier = () =>
 
 export const Outro = () =>
   <div className={styles.slideVerticalCenter}>
-    <h1>Thank you</h1>
+    <h1 style={{ fontSize: '42px' }}>Thank you</h1>
+    <Author />
+  </div>
+
+export const Author = () =>
+  <div style={{ position: 'absolute', top: '70%', left: '50%' }}>
+    <div style={{ fontSize: '42px' }}>Alexi Chepura</div>
+    <img src="media/fh-white.svg" style={{ width: '458px' }} />
   </div>
