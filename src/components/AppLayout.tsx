@@ -23,6 +23,7 @@ import {
   Outro,
   HypeTrain,
   PrettierIntro,
+  PrettierIntro2,
 } from './Slides/Media'
 
 @observer
@@ -42,6 +43,7 @@ export class AppLayout extends React.Component<{}, {}> {
           <Slide component={Prettier} />
 
           <Slide component={PrettierIntro} />
+          <Slide component={PrettierIntro2} />
           <Slide component={Support} />
           <Slide component={HypeTrain} />
           <Slide component={Options} />

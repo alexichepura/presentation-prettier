@@ -83,7 +83,7 @@ export const Options = () =>
       <li>Tab Width</li>
       <li>Tabs</li>
       <li>Semicolons</li>
-      <li>Quotes</li>
+      <li>Single/Double Quotes</li>
       <li>Trailing Commas</li>
       <li>Bracket Spacing</li>
       <li>JSX Brackets</li>
@@ -161,6 +161,14 @@ export const PrettierIntro = () =>
       src="media/prettier.png"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
+  </div>
+
+export const PrettierIntro2 = () =>
+  <div className={styles.slideVerticalCenter}>
+    <h2 style={{ fontSize: '42px' }}>Build by James Long</h2>
+    <h2 style={{ fontSize: '42px' }} className="code">
+      Code -> AST -> Formatted Print
+    </h2>
   </div>
 
 export const Prettier = () =>
