@@ -26,13 +26,17 @@
   color: white;
   background-color: black;
 }
-
-.slideVerticalCenter {
-  composes: slide;
+.verticalCenter {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.slideVerticalCenter {
+  composes: slide;
+  composes: verticalCenter;
 }
 
 .intro {
@@ -51,4 +55,25 @@
   position: absolute;
   max-height: 60vh;
   max-width: 60vw;
+}
+
+.tilesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 700px;
+}
+.trainTile {
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  position: relative;
+}
+.trainImg {
+  margin: 0 auto;
+  height: 100px;
+}
+.trainTitle {
+  text-align: center;
+  font-size: 38px;
 }

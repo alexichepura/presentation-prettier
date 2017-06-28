@@ -70,7 +70,9 @@ export const Support = () =>
       <li>JSX</li>
       <li>Flow</li>
       <li>TypeScript</li>
-      <li>CSS, LESS, and SCSS</li>
+      <li>CSS, LESS, SCSS and... CSS-in-JS!</li>
+      <li>JSON</li>
+      <li>GraphQL</li>
     </ul>
   </div>
 
@@ -92,7 +94,6 @@ export const Consistency = () =>
   <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '56px' }}>
       <li>consistency<br /><br /></li>
-      <li>no nitpicking and no commits to fix formatting<br /><br /></li>
       <li>code readable by humans<br /><br /></li>
     </ul>
   </div>
@@ -101,13 +102,11 @@ export const Consistency2 = () =>
   <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '56px' }}>
       <li>
-        consistency <br />&nbsp;- formatters: jsbeautifier, prettydiff, eslint
-        --fix <br />
+        consistency
+        <br />&nbsp;- formatters: jsbeautifier, prettydiff, eslint --fix
+        <br />&nbsp;- format on save or precommit hook
         <br />
-      </li>
-      <li>
-        no nitpicking and no commits to fix formatting
-        <br />&nbsp;- format on save or precommit hook<br /><br />
+        <br />
       </li>
       <li>
         code readable by humans
@@ -136,7 +135,7 @@ export const Goal = () =>
 
 export const ESLint = () =>
   <div className={styles.slideVerticalCenter}>
-    <h1>ESLint</h1>
+    <h1>ESLint - linting, not formatting</h1>
     <img
       src="media/eslint-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '60%' }}
@@ -156,6 +155,14 @@ export const JSBeautify = () =>
     />
   </div>
 
+export const PrettierIntro = () =>
+  <div className={styles.slideVerticalCenter}>
+    <img
+      src="media/prettier.png"
+      style={{ maxWidth: '90%', maxHeight: '90%' }}
+    />
+  </div>
+
 export const Prettier = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>Prettier</h1>
@@ -163,6 +170,47 @@ export const Prettier = () =>
       src="media/goal-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
+  </div>
+
+export const HypeTrain = () =>
+  <div className={styles.slideVerticalCenter}>
+    <h2 style={{ fontSize: '42px' }}>Who uses prettier</h2>
+    <div>
+      <div className={styles.tilesContainer}>
+        <div className={styles.trainTile}>
+          <img src="media/babel-200x100.png" className={styles.trainImg} />
+        </div>
+        <div className={styles.trainTile}>
+          <img
+            src="media/jest.svg"
+            className={styles.trainImg}
+            style={{ marginLeft: '10px' }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              top: '25px',
+              left: '100px',
+              fontSize: '36px',
+            }}
+          >
+            Jest
+          </div>
+        </div>
+        <div className={styles.trainTile}>
+          <img src="media/react-200x100.png" className={styles.trainImg} />
+        </div>
+        <div className={styles.trainTile}>
+          <img src="media/webpack.svg" className={styles.trainImg} />
+        </div>
+        <div className={styles.trainTile}>
+          <img src="media/yarn-200x100.png" className={styles.trainImg} />
+        </div>
+        <div className={styles.trainTile}>
+          <img src="media/zeit.svg" className={styles.trainImg} />
+        </div>
+      </div>
+    </div>
   </div>
 
 export const Outro = () =>

@@ -21,6 +21,8 @@ import {
   Support,
   Options,
   Outro,
+  HypeTrain,
+  PrettierIntro,
 } from './Slides/Media'
 
 @observer
@@ -39,7 +41,9 @@ export class AppLayout extends React.Component<{}, {}> {
           <Slide component={ESLint} />
           <Slide component={Prettier} />
 
+          <Slide component={PrettierIntro} />
           <Slide component={Support} />
+          <Slide component={HypeTrain} />
           <Slide component={Options} />
           {/*<Slide component={Formatted} />*/}
           {/*<Slide component={Waaat} />*/}
