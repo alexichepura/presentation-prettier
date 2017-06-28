@@ -44,7 +44,7 @@
 .absolute {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 42px;
+  font-size: 56px;
 }
 
 .media {

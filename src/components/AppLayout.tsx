@@ -37,7 +37,6 @@ export class AppLayout extends React.Component<{}, {}> {
           <Slide component={Problem} />
           <Slide component={Goal} />
           <Slide component={ESLint} />
-          <Slide component={JSBeautify} />
           <Slide component={Prettier} />
 
           <Slide component={Support} />

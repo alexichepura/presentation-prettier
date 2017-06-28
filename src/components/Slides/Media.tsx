@@ -28,24 +28,33 @@ export const Split = () =>
       src="media/split.mp4"
       className={styles.media}
     />
-    <span style={{ left: '20%', top: '70%' }} className={styles.absolute}>
+    <span
+      style={{ left: '20%', top: '70%', fontSize: '56px' }}
+      className={styles.absolute}
+    >
       2 spaces
     </span>
-    <span style={{ left: '42%', top: '84%' }} className={styles.absolute}>
+    <span
+      style={{ left: '42%', top: '84%', fontSize: '56px' }}
+      className={styles.absolute}
+    >
       Tabs
     </span>
-    <span style={{ left: '67%', top: '86%' }} className={styles.absolute}>
+    <span
+      style={{ left: '67%', top: '86%', fontSize: '56px' }}
+      className={styles.absolute}
+    >
       4 spaces
     </span>
   </div>
 
 export const Refactor = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <video autoPlay loop src="media/refactor.mp4" />
   </div>
 
 export const Formatted = () =>
-  <div className={'center-x-y ' + styles.slide}>
+  <div className={styles.slideVerticalCenter}>
     <video autoPlay loop src="media/formatted.mp4" />
   </div>
 
@@ -81,16 +90,16 @@ export const Options = () =>
 
 export const Consistency = () =>
   <div className={styles.slideVerticalCenter}>
-    <ul style={{ fontSize: '42px' }}>
+    <ul style={{ fontSize: '56px' }}>
       <li>consistency<br /><br /></li>
       <li>no nitpicking and no commits to fix formatting<br /><br /></li>
-      <li>code to look good<br /><br /></li>
+      <li>code readable by humans<br /><br /></li>
     </ul>
   </div>
 
 export const Consistency2 = () =>
   <div className={styles.slideVerticalCenter}>
-    <ul style={{ fontSize: '42px' }}>
+    <ul style={{ fontSize: '56px' }}>
       <li>
         consistency <br />&nbsp;- formatters: jsbeautifier, prettydiff, eslint
         --fix <br />
@@ -101,7 +110,7 @@ export const Consistency2 = () =>
         <br />&nbsp;- format on save or precommit hook<br /><br />
       </li>
       <li>
-        code to be pretty
+        code readable by humans
         <br />&nbsp;- ?<br /><br />
       </li>
     </ul>
@@ -110,14 +119,17 @@ export const Consistency2 = () =>
 export const Problem = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>Problem</h1>
-    <img src="media/orig.jpg" style={{ maxWidth: '90%', maxHeight: '90%' }} />
+    <img
+      src="media/orig-vs.jpg"
+      style={{ maxWidth: '90%', maxHeight: '90%' }}
+    />
   </div>
 
 export const Goal = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>Goal</h1>
     <img
-      src="media/prettier-result.jpg"
+      src="media/goal-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
   </div>
@@ -126,11 +138,11 @@ export const ESLint = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>ESLint</h1>
     <img
-      src="media/eslint-ui-error.jpg"
+      src="media/eslint-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '60%' }}
     />
     <img
-      src="media/eslint-terminal-error.jpg"
+      src="media/eslint-terminal.jpg"
       style={{ maxWidth: '90%', maxHeight: '30%' }}
     />
   </div>
@@ -148,7 +160,7 @@ export const Prettier = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>Prettier</h1>
     <img
-      src="media/prettier-result.jpg"
+      src="media/goal-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
   </div>

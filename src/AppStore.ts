@@ -1,5 +1,6 @@
 import createHistory from 'history/createBrowserHistory'
 import { observable } from 'mobx'
+const Gamepad = require('./Gamepad')
 
 export class AppStore {
   history = createHistory()
@@ -9,10 +10,20 @@ export class AppStore {
   @observable i = 0
   n = 0
 
+  gamepad: any
+
   constructor() {
     this.slideLeft = this.shift.bind(this, -1)
     this.slideRight = this.shift.bind(this, 1)
-    document.addEventListener('keydown', this.handleKeyboardEvent, false)
+    // document.addEventListener('keydown', this.handleKeyboardEvent, false)
+
+    this.gamepad = new Gamepad()
+    this.gamepad.on('press', 'd_pad_left', e => {
+      this.slideLeft()
+    })
+    this.gamepad.on('press', 'd_pad_right', e => {
+      this.slideRight()
+    })
   }
 
   setSlidesNumber(n: number) {
