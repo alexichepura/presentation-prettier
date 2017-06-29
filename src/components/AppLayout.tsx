@@ -24,6 +24,7 @@ import {
   HypeTrain,
   PrettierIntro,
   PrettierIntro2,
+  Precommit,
 } from './Slides/Media'
 
 @observer
@@ -38,18 +39,20 @@ export class AppLayout extends React.Component<{}, {}> {
           <Slide component={Consistency2} />
 
           <Slide component={Problem} />
-          <Slide component={Goal} />
+          {/*<Slide component={Goal} />*/}
           <Slide component={ESLint} />
+          <Slide component={JSBeautify} />
           <Slide component={Prettier} />
 
           <Slide component={PrettierIntro} />
           <Slide component={PrettierIntro2} />
+          <Slide component={Options} />
           <Slide component={Support} />
           <Slide component={HypeTrain} />
-          <Slide component={Options} />
           {/*<Slide component={Formatted} />*/}
           {/*<Slide component={Waaat} />*/}
           {/*<Slide component={Refactor} />*/}
+          <Slide component={Precommit} />
           <Slide component={Outro} />
         </Slider>
         <Counter />

@@ -6,11 +6,9 @@ export const Intro = () =>
     <h1 className={'code' + ' ' + styles.intro}>
       <span className={styles.red}>howILearned</span>
       <br />
-
       &nbsp;&nbsp;
       <span className={styles.purple}>to</span>&nbsp;
       <span className={styles.blue}>stopWorrying</span>()
-
       <br />
       &nbsp;&nbsp;
       <span className={styles.purple}>and</span>&nbsp;
@@ -80,21 +78,27 @@ export const Options = () =>
   <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '42px' }}>
       <li>Print Width</li>
+      <li>Semicolons or Not</li>
+      <li>Single or Double Quotes</li>
+      <li>Tabs or Spaces</li>
       <li>Tab Width</li>
-      <li>Tabs</li>
-      <li>Semicolons</li>
-      <li>Single/Double Quotes</li>
       <li>Trailing Commas</li>
       <li>Bracket Spacing</li>
-      <li>JSX Brackets</li>
+      <li>JSX Brackets Position</li>
     </ul>
   </div>
 
 export const Consistency = () =>
   <div className={styles.slideVerticalCenter}>
     <ul style={{ fontSize: '56px' }}>
-      <li>consistency<br /><br /></li>
-      <li>code readable by humans<br /><br /></li>
+      <li>
+        consistency<br />
+        <br />
+      </li>
+      <li>
+        code readable by humans<br />
+        <br />
+      </li>
     </ul>
   </div>
 
@@ -110,7 +114,8 @@ export const Consistency2 = () =>
       </li>
       <li>
         code readable by humans
-        <br />&nbsp;- ?<br /><br />
+        <br />&nbsp;- ?<br />
+        <br />
       </li>
     </ul>
   </div>
@@ -150,7 +155,7 @@ export const JSBeautify = () =>
   <div className={styles.slideVerticalCenter}>
     <h1>JS Beautify</h1>
     <img
-      src="media/js-beautify.jpg"
+      src="media/jsbeautify-vs.jpg"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
   </div>
@@ -161,11 +166,19 @@ export const PrettierIntro = () =>
       src="media/prettier.png"
       style={{ maxWidth: '90%', maxHeight: '90%' }}
     />
+    <h2
+      style={{
+        fontSize: '42px',
+        marginLeft: '620px',
+        marginTop: '16px',
+      }}
+    >
+      by James Long
+    </h2>
   </div>
 
 export const PrettierIntro2 = () =>
   <div className={styles.slideVerticalCenter}>
-    <h2 style={{ fontSize: '42px' }}>Build by James Long</h2>
     <h2 style={{ fontSize: '42px' }} className="code">
       Code -> AST -> Formatted Print
     </h2>
@@ -219,6 +232,15 @@ export const HypeTrain = () =>
         </div>
       </div>
     </div>
+  </div>
+
+export const Precommit = () =>
+  <div className={styles.slideVerticalCenter}>
+    <h1>Precommit format with lint-staged and husky</h1>
+    <img
+      src="media/precommit.jpg"
+      style={{ maxWidth: '90%', maxHeight: '90%' }}
+    />
   </div>
 
 export const Outro = () =>
