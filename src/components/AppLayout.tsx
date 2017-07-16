@@ -51,9 +51,9 @@ export class AppLayout extends React.Component<{}, {}> {
           <Slide component={HypeTrain} />
           {/*<Slide component={Formatted} />*/}
           {/*<Slide component={Waaat} />*/}
-          {/*<Slide component={Refactor} />*/}
           <Slide component={Precommit} />
           <Slide component={Outro} />
+          <Slide component={Refactor} />
         </Slider>
         <Counter />
       </main>

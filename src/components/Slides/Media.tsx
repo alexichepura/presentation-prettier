@@ -49,6 +49,9 @@ export const Split = () =>
 export const Refactor = () =>
   <div className={styles.slideVerticalCenter}>
     <video autoPlay loop src="media/refactor.mp4" />
+    <h1 style={{ fontSize: '56px', marginTop: '16px' }}>
+      Prettify everything!
+    </h1>
   </div>
 
 export const Formatted = () =>
